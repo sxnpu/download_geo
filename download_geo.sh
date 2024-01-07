@@ -4,7 +4,7 @@
 DEST_DIR="/usr/share/v2ray"
 
 # 下载和更新 geoip.dat 文件
-GEOIP_URL="https://raw.githubusercontent.com/Loyalsoldier/geoip/release/geoip-only-cn-private.dat"
+GEOIP_URL="https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat"
 wget -O "$DEST_DIR/geoip.dat.tmp" $GEOIP_URL
 if [ -f "$DEST_DIR/geoip.dat.tmp" ]; then
     mv -f "$DEST_DIR/geoip.dat.tmp" "$DEST_DIR/geoip.dat"
